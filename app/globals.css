@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import 'leaflet/dist/leaflet.css';
+
+body {
+  background-color: #0b0f14;
+  color: #e8e6df;
+}
+
+/* Strip default Leaflet chrome so it matches the dark cyber-cartography theme */
+.leaflet-container {
+  background: #0b0f14 !important;
+}
+.leaflet-control-attribution {
+  background: rgba(11, 15, 20, 0.7) !important;
+  color: #8a94a6 !important;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px !important;
+}
+.leaflet-control-attribution a {
+  color: #8a94a6 !important;
+}
